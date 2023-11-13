@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container-search {
+  margin-top: 117px;
+  margin-left: 132px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.wraper-search {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 400px;
+  border-radius: 8px;
+  background: var(--neutral-01, #fff);
+  /* Shadow/Low */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+.card-search {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 8px;
+}
+
+.image-search {
+  width: 232px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+.heading-search {
+  align-self: stretch;
+  display: flex;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.price-search {
+  align-self: stretch;
+  display: flex;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.paragaf-search {
+  width: 243px;
+  display: flex;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+}
+
+.button-form {
+  background-color: green;
+  width: 123px;
+  height: 44px;
+  margin-top: 24px;
+  color: white;
+}
+
+.button-search {
+  width: 234px;
+  margin: 24px;
+  background-color: #5cb85f;
+  color: white;
+}
+
+.empty-data{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

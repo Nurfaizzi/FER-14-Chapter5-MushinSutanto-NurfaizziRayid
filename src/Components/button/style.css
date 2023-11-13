@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn {
+  display: flex;
+  position: absolute;
+  background-color: #5cb85f;
+  color: white;
+  margin-left: 132px;
+  margin-top: -85px;
+}
+
+.Button {
+  background-color: #f1f3ff;
+}
+
+@media screen and (max-width: 569px) {
+  button {
+    background-color: #5cb85f;
+    margin-left: 80px;
+  }
+  .btn-banner {
+    background-color: #f1f3ff;
+  }
+  .btn {
+    display: flex;
+    position: absolute;
+    background-color: #5cb85f;
+    color: white;
+    margin-left: 132px;
+    margin-top: -285px;
+  }
+  #btn-banner {
+    margin-left: 16px;
+  }
+}

@@ -1,0 +1,136 @@
+#landingpage {
+  max-width: 1280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-top {
+  background-color: #f1f3ff;
+
+  width: 1329;
+  gap: 16px;
+  display: flex;
+}
+
+.car-rental {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f3ff;
+}
+
+.container-rental-car {
+  background-color: #f1f3ff;
+  margin-top: 118px;
+  margin-left: 132px;
+  display: flex;
+  color: #000;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  width: 568px;
+  margin-bottom: 16px;
+  height: 106px;
+}
+
+.container-car-binar {
+  background-color: #f1f3ff;
+  margin-top: 0px;
+  margin-left: 132px;
+  padding: 0px;
+  display: flex;
+  color: #000;
+
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  width: 468px;
+  height: 60px;
+  margin-bottom: 24px;
+  line-height: 150%;
+}
+
+.container-img-one {
+  background-color: #f1f3ff;
+  display: flex;
+  float: right;
+  top: 0;
+  margin-top: 65px;
+}
+.container-car {
+  background-color: #f1f3ff;
+
+  top: 0;
+  display: flex;
+  float: right;
+  width: 612px;
+  height: 337px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 569px) {
+  .container-top {
+    display: flex;
+    background-color: #f1f3ff;
+    flex-direction: column;
+    margin-left: -64px;
+    margin-top: 10px;
+    padding-top: 32px;
+    gap: 16px;
+    display: flex;
+  }
+  .car-rental {
+    background-color: #f1f3ff;
+    padding-top: 32px;
+
+    background-color: #f1f3ff;
+  }
+  .container-rental-car {
+    background-color: #f1f3ff;
+    width: 17%;
+    margin-top: 32px;
+    margin-left: 80px;
+  }
+  .container-car-binar {
+    margin-left: 80px;
+    background-color: #f1f3ff;
+    display: flex;
+    color: #000;
+    margin-top: 46px;
+    width: 17%;
+    padding-top: 16px;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+
+    height: 60px;
+    padding-bottom: 76px;
+    line-height: 150%;
+  }
+  .container-img {
+    background-color: #f1f3ff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .container-car {
+    background-color: #f1f3ff;
+    display: flex;
+    flex-direction: column;
+    width: 349.216px;
+    height: 199px;
+    flex-shrink: 0;
+    margin-left: 80px;
+  }
+  .btn {
+    margin-left: 76px;
+  }
+}

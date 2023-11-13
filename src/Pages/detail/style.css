@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box-result {
+  display: flex;
+  background-color: #f1f3ff;
+  display: flex;
+  margin-top: 90px;
+  height: 100px;
+  margin-top: 58px;
+}
+
+#result {
+  display: flex;
+}
+
+.forminput-result {
+  box-sizing: border-box;
+  border: 1px solid;
+  gap: 32px;
+  width: 1074px;
+  position: absolute;
+  margin-left: 132px;
+  margin-top: -37px;
+  border-radius: 8px;
+  height: 119px;
+  background: var(--neutral-01, #fff);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+.form-result {
+  display: flex;
+  flex-direction: column;
+  width: 605px;
+  height: 618px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--neutral-01, #fff);
+  /* Shadow/Low */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  margin-left: 136px;
+  margin-top: 119px;
+}
+
+.heading-form {
+  padding-top: 24px;
+  padding-left: 24px;
+  width: 140px;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+.include {
+  width: 57px;
+  margin-top: 16px;
+  margin-left: 24px;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+.title-include {
+  width: 557px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-include p {
+  margin-left: 24px;
+  color: var(--neutral-03, #8a8a8a);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 24.5px */
+}
+
+.title-include li {
+  margin-left: 24px;
+  margin-top: 8px;
+}
+
+.exclude {
+  width: 57px;
+  margin-top: 16px;
+  margin-left: 24px;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+.title-exclude {
+  width: 557px;
+  display: flex;
+  flex-direction: column;
+}
+.title-exclude p {
+  margin-left: 24px;
+  color: var(--neutral-03, #8a8a8a);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%; /* 24.5px */
+}
+
+.title-exclude li {
+  margin-left: 24px;
+  margin-top: 8px;
+}
+
+.title-refund {
+  margin-left: 24px;
+  margin-top: 16px;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.list-refund {
+  width: 557px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-refund p {
+  width: 557px;
+
+  color: var(--neutral-03, #8a8a8a);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+}
+
+.list-refund li {
+  margin-left: 24px;
+  margin-top: 8px;
+}
+
+#icon-refund {
+  margin-left: 329px;
+}
+
+.wraper-result {
+  display: flex;
+  flex-direction: column;
+  width: 405px;
+  height: 435px;
+  border-radius: 8px;
+  background: var(--neutral-01, #fff);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  margin-left: 56px;
+  margin-top: 119px;
+}
+
+.card-result {
+  padding-top: 28px;
+  display: flex;
+  padding-left: 68px;
+  padding-right: 67px;
+  padding-bottom: 67px;
+}
+
+.image-result {
+  width: 270px;
+  height: 160px;
+}
+
+.heading-result {
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: 24px;
+}
+
+i {
+  padding-right: 6px;
+}
+
+#icon-result {
+  margin-left: 24px;
+  padding-top: 3px;
+  color: #8a8a8a;
+}
+
+.result-total {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.paragaf-result {
+  display: flex;
+  color: #8a8a8a;
+
+  font-family: Arial;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 140% */
+}
+
+h4 {
+  display: flex;
+  margin-top: 55px;
+  margin-left: 24px;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+h2 {
+  margin-top: 55px;
+  color: var(--neutral-01, #000);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+.button-detail {
+  background-color: #5cb85f;
+  margin-top: 24px;
+  color: white;
+}

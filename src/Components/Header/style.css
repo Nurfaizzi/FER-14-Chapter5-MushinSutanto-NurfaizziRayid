@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: absolute;
+  background: #f1f3ff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navigation {
+  width: 100%;
+  background-color: #f1f3ff;
+  margin-top: 24px;
+}
+
+.container {
+  width: 80%;
+}
+
+.box-blue {
+  background-color: #f1f3ff;
+}
+
+.box-landingpage {
+  border-radius: 0%;
+  display: flex;
+  margin-left: 136px;
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+  background: #0d28a6;
+}
+
+.bcr {
+  display: none;
+  padding-left: 136px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #f1f3ff;
+}
+
+#ul-header {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+  background-color: #f1f3ff;
+}
+
+#ul-header li {
+  list-style: none;
+  background-color: #f1f3ff;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  background-color: #f1f3ff;
+
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+a {
+  color: black;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: black;
+}
+
+@media screen and (max-width: 569px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 90px;
+    width: 327px;
+    background-color: #f1f3ff;
+  }
+
+  #ul-header {
+    height: 1075px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    height: 942px;
+    width: 185px;
+    top: -423px;
+    right: -300px;
+    position: absolute;
+    height: 679px;
+    background-color: white;
+    padding: 40px 0px 0px 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 181px 180px 180px 180px rgba(0, 0, 0, 0.6);
+  }
+  ul li {
+    background-color: white;
+  }
+
+  .bcr {
+    display: block;
+    background-color: #f1f3ff;
+    right: 0px;
+    padding-left: 0px;
+    font-size: 14px;
+  }
+
+  .ul-active {
+    right: -5px;
+  }
+
+  .box-landingpage {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 176px;
+  }
+
+  #bar {
+    cursor: pointer;
+    background-color: #f1f3ff;
+  }
+  #barss {
+    display: flex;
+    margin-left: 90px;
+    margin-left: 117px;
+    margin-top: -17px;
+    background-color: #f1f3ff;
+  }
+
+  #mobile {
+    background-color: #f1f3ff;
+    display: block;
+    margin-left: 319px;
+    margin-top: -32px;
+    margin-bottom: 20px;
+
+    height: 90%;
+  }
+}

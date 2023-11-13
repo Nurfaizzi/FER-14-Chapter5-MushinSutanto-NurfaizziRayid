@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading-notfound {
+  margin-left: 390px;
+  margin-top: 150px;
+}
+
+.subheading-notfound {
+  margin-left: 500px;
+  font-size: 120px;
+  display: flex;
+}
+
+.wrong-notfound {
+  margin-left: 340px;
+}
+
+.btn-notfound {
+  background-color: blue;
+  color: white;
+  margin-left: 550px;
+  margin-top: 20px;
+}

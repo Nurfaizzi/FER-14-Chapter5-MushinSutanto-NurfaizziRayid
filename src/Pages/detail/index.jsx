@@ -1,17 +1,26 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Header from "../../Components/Header";
 import "./style.css";
 import Footer from "../../Components/Footer";
 import { Link } from "react-router-dom";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 const Detail = () => {
   const param = useParams();
   const [carDetail, setCarDetail] = useState({});
   const [text, setText] = useState(false);
+  const [startDate,setStartDate] = useState("")
+  const [endDate,setEndDate] = useState("")
+  const [enabled,setEnabled] = useState(true)
+  const navigate = useNavigate()
   const display = () => {
     setText(!text);
   };
+
+
 
   useEffect(() => {
     handleGetCarDetail();
@@ -23,15 +32,45 @@ const Detail = () => {
       .then((res) => {
         console.log(res);
         setCarDetail(res.data);
+        
       })
       .catch((err) => console.log(err));
   };
+
+  const onChangeDate = (value) => {
+    // setEnabled(true)
+    if(setStartDate === null || setEndDate === null ){
+      setEnabled(true)
+    }else{
+      setEnabled(false)
+     
+    }
+    setStartDate(value[0]) 
+    setEndDate(value[1])
+    console.log(value)
+    return
+  }
+
+  const handleClick = (value) => {
+    if(setStartDate == value[0] || setEndDate == value[1] ){
+      setEnabled(true)
+        
+    }else{
+      setEnabled(false)
+     
+    }
+    navigate('/home')
+   return
+  
+  }
+
+
 
   return (
     <div>
       <Header />
       <div>
-        <div className="box-result">p</div>
+        <div className="box-result"></div>
         <div>
           <div className="forminput-result" id="form">
             <div className="container-form">
@@ -125,10 +164,30 @@ const Detail = () => {
             <i id="icon-result" className="fa-solid fa-user-group"></i>
             <p>{carDetail.category}</p>
           </div>
+          <label className="label-date">Tentukan lama sewa mobil (max. 7 hari)</label>
+          
+         <DatePicker 
+         selectsRange={true}
+         onClick={handleClick  }
+           icon="fa fa-calendar"
+         startDate={startDate}
+         endDate={endDate}
+         isClearable = {enabled? false:true}
+         placeholderText="Pilih tanggal mulai dan tanggal akhir sewa"
+         onChange={onChangeDate}
+         dateFormat="dd MMM yyyy"
+         required
+         form="external-form"
+         >
+        
+         </DatePicker>
           <div className="result-total">
             <h4 className="paragaf-search">Total</h4>
-            <h2>{carDetail.price}</h2>
+            <h2>Rp.{carDetail.price}</h2>
           </div>
+          {/* <form id="external-form"> */}
+          <button  onClick={handleClick} type="submit" id="button-checkout"  disabled={enabled ? true: false} >Lanjutkan Pembayaran</button>
+      {/* </form> */}
         </div>
       </div>
       <Footer />

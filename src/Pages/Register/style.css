@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head-form{
+    display: flex;
+}
+
+.heading-formlogin h1{
+
+    width: 720px;
+    height: 900px;
+    flex-shrink: 0;
+color: #FFF;
+width: 540px;
+height: 593px;
+font-family: Rubik;
+flex-shrink: 0;
+padding-top: 45px;
+padding-left: 115px;
+padding-right: 176px;
+flex-shrink: 0;
+background-color: #0D28A6;
+font-size: 33px;
+font-style: normal;
+line-height: 150%; 
+
+}
+
+
+.image-formlogin{
+    display: flex;
+    position: absolute;
+    margin-top: -475px;
+    margin-bottom: 40px;
+    width: 540px;
+    height: 475.9px;
+padding-left: 115px;
+
+}
+
+.logo-register{
+   background-color: #CFD4ED;
+    width: 100px;
+height: 34px;
+color: #CFD4ED;
+margin-bottom: 32px;
+}
+
+.header-register{
+    color: #000;
+    padding-bottom: 32px;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 175px;    
+   margin-left: 175px;
+   
+}
+
+.register{
+    display: flex;
+}
+
+.label-register{
+margin-bottom: 16px;
+}
+
+.label-password{
+    margin-bottom: 0px;
+}
+
+.input-register{
+    display: flex;
+    width: 370px;
+    height: 38.1px;
+    
+}
+
+.input-password{
+    display: flex;
+    width: 370px;
+    height: 38.1px;
+
+}
+
+.btn-signup{
+    background-color: #0D28A6;
+    color: white;
+    margin-top: 22px;
+}
+
+.have-account{
+    display: flex;
+    justify-content: center;
+}
+
+.have-account h4{
+    display: flex;
+    margin-top: 2px;
+    font-size: 14px;
+    margin-left: 6px;
+    color: #0D28A6;
+    text-decoration: underline;
+}

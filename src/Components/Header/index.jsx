@@ -1,14 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
 import React, { Component } from "react";
 
-class Header extends Component {
-  state = { clicked: false };
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
+const Header = () => {
+const navigate = useNavigate ()
+const accesToken = localStorage.getItem("accesToken")
 
-  render() {
+const handleLogOut = () => {
+  localStorage.removeItem("accesToken")
+  navigate('/home')
+}
+
+ 
+
     return (
       <div>
         <header>
@@ -21,26 +25,18 @@ class Header extends Component {
                       <button className="box-landingpage"></button>
                     </Link>
                     <div className="box-blue"> </div>
-                    <div id="mobile" onClick={this.handleClick}>
+                    <div id="mobile" >
                       <i
                         id="bar"
-                        className={
-                          this.state.clicked ? "fas fa-times" : "fas fa-bars"
-                        }
                       ></i>
                     </div>
                     <ul
                       id="ul-header"
-                      className={this.state.clicked ? "ul-active" : "ul"}
-                      onClick={this.handleClick}
                     >
                       <h1 className="bcr">
                         BCR{""}
                         <i
                           id="barss"
-                          className={
-                            this.state.clicked ? "fas fa-times" : "fass fa-bars"
-                          }
                         ></i>
                       </h1>
                       <li>
@@ -60,10 +56,20 @@ class Header extends Component {
                 </div>
               </div>
             </div>
-          </section>
+            {accesToken ? (
+                <button onClick={handleLogOut}  className="button-register">Logout</button>
+            ):(
+              <Link to="/register">
+              <button className="button-register">Register</button>
+              </Link>
+            )}
+         
+            
+          </section>.
+         
         </header>
       </div>
     );
   }
-}
+
 export default Header;

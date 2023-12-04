@@ -84,6 +84,7 @@
     padding-top: 32px;
     gap: 16px;
     display: flex;
+    margin-top: -1px;
   }
   .car-rental {
     background-color: #f1f3ff;

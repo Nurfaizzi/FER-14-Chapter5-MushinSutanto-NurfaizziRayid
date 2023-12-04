@@ -1,18 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+ 
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+  justify-content: center;
+}
+
+
 header {
-  position: absolute;
   background: #f1f3ff;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation {
@@ -32,7 +39,7 @@ header {
 .box-landingpage {
   border-radius: 0%;
   display: flex;
-  margin-left: 136px;
+  margin-left: 132px;
   width: 100px;
   height: 34px;
   flex-shrink: 0;
@@ -56,6 +63,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 19px;
+  margin-left: 500px;
   background-color: #f1f3ff;
 }
 
@@ -89,7 +97,28 @@ a {
   color: black;
 }
 
+.button-register{
+  display: flex;
+  margin-top: 1px;
+  text-align: center;
+  align-items: center;
+  background-color: #5cb85f;
+  color: white;
+  width: 8%;
+  margin-left: 1100px;
+  margin-top: -35px;
+}
+
 @media screen and (max-width: 569px) {
+
+  *{
+    max-width: 220px;
+  }
+
+  body{
+    justify-content: start;
+  }
+
   .navbar {
     display: flex;
     flex-direction: column;
@@ -101,8 +130,14 @@ a {
   }
 
   #ul-header {
+    display: none;
+    justify-content: center;
+    gap: 19px;
+    margin-left: 500px;
+    background-color: #f1f3ff;
     height: 1075px;
   }
+  
 
   ul {
     display: flex;
@@ -113,7 +148,7 @@ a {
     height: 942px;
     width: 185px;
     top: -423px;
-    right: -300px;
+
     position: absolute;
     height: 679px;
     background-color: white;
@@ -164,4 +199,18 @@ a {
 
     height: 90%;
   }
+
+  .button-register{
+    display: none;
+    margin-top: 1px;
+    text-align: center;
+    align-items: center;
+    background-color: #5cb85f;
+    color: white;
+    width: 8%;
+    margin-left: 1100px;
+    margin-top: -35px;
+  }
+
+
 }

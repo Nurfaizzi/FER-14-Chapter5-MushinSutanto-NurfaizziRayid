@@ -17,7 +17,6 @@ const Login = () => {
   };
 
   const handleGetPassword = (e) => {
-
         setPass(e.target.value);
     setSucces("");
     setError("");
